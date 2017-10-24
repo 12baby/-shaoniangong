@@ -1,0 +1,15 @@
+<p class="seach inquiry">
+    
+    <input type="text" placeholder="课程查询">
+    <button>查询</button>
+   <div ng-repeat="x in txt5" >
+    <h3>{{x.title}}</h3>
+    <ul ng-repeat="y in x.list |filter:type" id="info">
+       
+            <b>{{y.sing}}</b>
+            <b>{{y.dance}}</b>
+            <b>{{y.musical}}</b>
+    </ul>
+</div>
+
+</p>

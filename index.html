@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-transform" /> 
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    @media(max-width:1920px)
+    {
+        body {width:100%;} 
+        
+            /* 正文全屏显示 */
+            .container{width:100%} 
+            img { max-width: 98%; }
+    }
+</style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span>&lt;</span>
+            <span>&gt;</span>
+        </header>
+        <section class="section">
+          <div class="wrap">
+            <ui-view class="content"></ui-view>
+            <ul class="list">
+                 <li ui-sref="summary">
+                     <img src="images/001.png" alt="">
+                     <span>少年宫简介</span>
+                 </li>
+                 <li ui-sref="signup">
+                     <img src="images/002.png" alt="">
+                     <span>报名流程图</span>
+                 </li>
+                 <li ui-sref="storey">
+                     <img src="images/003.png" alt="">
+                     <span>楼层分布</span>
+                 </li>
+                 <li ui-sref="courses">
+                     <img src="images/004.png" alt="">
+                     <span>课时表</span>
+                 </li>
+                 <li ui-sref="inquiry">
+                     <img src="images/005.png" alt="">
+                     <span>课程查询</span>
+                 </li>
+                 <li>
+                     <img src="images/logo1.png" alt="">
+                 </li>
+                 <li ui-sref="teach">
+                     <img src="images/006.png" alt="">
+                     <span>教学部门及教师查询</span>
+                 </li>
+            </ul>
+          </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="js/angular.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+<script src="js/router.config.js"></script>
+<script src="js/controller.js"></script>
